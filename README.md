@@ -21,7 +21,7 @@ A simple and responsive To-Do List web application built with **JavaScript** and
 
 1. **Clone the repository** or download the project folder:
    ```bash
- github repo ( "https://github.com/AyeshaAnwar2/Todo-list-project/tree/main")
+ github repo ( https://github.com/AyeshaAnwar2/Todo-list-project)
 
 [ live at] : ("https://list-tod.netlify.app")
 🧑‍💻 How to Use

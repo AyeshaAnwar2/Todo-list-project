@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -12,66 +13,43 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="flex justify-center items-center min-h-screen bg-gray-100">
+
+  <body class="flex justify-center items-center min-h-screen bg-gray-100 px-4">
     <div
-      class="bg-amber-50 w-full max-w-[500px] p-6 sm:p-8 border-2 border-white rounded-lg shadow-lg"
+      class="bg-amber-50 w-full max-w-md p-4 sm:p-6 border-2 border-white rounded-lg shadow-lg"
     >
       <h1 class="text-center font-bold font-serif text-2xl mb-4">TO DO List</h1>
 
-      <div class="space-x-3 flex m-2 items-center">
-        <h2>Add your items here</h2>
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-sm sm:text-base">Add your items here</h2>
         <i class="fa-solid fa-pencil text-blue-700"></i>
       </div>
 
-      <div class="flex items-center gap-2 mb-4">
+      <div
+        class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-4"
+      >
         <input
           placeholder="Your item"
           type="text"
           id="todo-input"
-          class="w-[320px] bg-amber-100 p-3 rounded-xl outline-none"
+          class="flex-1 bg-amber-100 p-3 rounded-xl outline-none text-sm"
         />
         <button
           id="add-btn"
-          class="bg-blue-400 hover:bg-blue-500 text-white w-[100px] p-3 rounded-xl"
+          class="bg-blue-400 hover:bg-blue-500 text-white sm:w-[100px] p-3 rounded-xl text-sm"
         >
           Add
         </button>
       </div>
 
       <h2 class="text-lg font-semibold mb-2 text-center">Your Tasks</h2>
-      <ul id="task-list" class="space-y-2">
-        <!-- <li
-          class="flex justify-between items-center bg-white p-2 rounded-md shadow"
-        >
-          <span>React</span>
-          <div class="space-x-3">
-            <i class="fa-solid fa-pencil text-blue-600 cursor-pointer"></i>
-            <i class="fa-solid fa-trash text-red-600 cursor-pointer"></i>
-          </div>
-        </li>
-        <li
-          class="flex justify-between items-center bg-white p-2 rounded-md shadow"
-        >
-          <span>HTML</span>
-          <div class="space-x-3">
-            <i class="fa-solid fa-pencil text-blue-600 cursor-pointer"></i>
-            <i class="fa-solid fa-trash text-red-600 cursor-pointer"></i>
-          </div>
-        </li>
-        <li
-          class="flex justify-between items-center bg-white p-2 rounded-md shadow"
-        >
-          <span>CSS</span>
-          <div class="space-x-3">
-            <i class="fa-solid fa-pencil text-blue-600 cursor-pointer"></i>
-            <i class="fa-solid fa-trash text-red-600 cursor-pointer"></i>
-          </div>
-        </li> -->
+      <ul id="task-list" class="space-y-2 text-sm">
+        <!-- Dynamic tasks will appear here -->
       </ul>
 
       <button
         id="clear"
-        class="mt-4 bg-red-500 hover:bg-red-600 text-white p-2 rounded-lg w-full"
+        class="mt-4 bg-red-500 hover:bg-red-600 text-white p-2 rounded-lg w-full text-sm"
       >
         Clear All
       </button>
